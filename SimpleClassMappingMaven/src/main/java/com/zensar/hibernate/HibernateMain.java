@@ -21,7 +21,9 @@ public class HibernateMain
         p.setName("Gautami");
         p.setBrand("ASUS");
         p.setPrice(12000);
+        
         s.save(p);
+        System.out.println("Product is saved");
         t.commit();
         s.close();
        
